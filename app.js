@@ -39,11 +39,16 @@ buttons.forEach(button => {
 // if (value === '=')... if the button's text is '=' then the calculate function will perform
 // if (value === '+', '-', '*', and '/'), then intiate the operator
 
-
-
-
 /*-------------------------------- Functions --------------------------------*/
 
+function handleNumber(number) {
+  if (!operator) {
+    firstOperand += number;
+  } else {
+    secondOperand += number;
+  }
+  display.textContent = firstOperand || '' + operator + secondOperand || '';
+}
 
 
 
