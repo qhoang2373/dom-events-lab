@@ -6,6 +6,9 @@ const buttons = calculator.querySelectorAll('.button');
 
 // /*-------------------------------- Variables --------------------------------*/
 
+let firstOperand = '';
+let secondOperand = '';
+let operator = '';
 
 
 
