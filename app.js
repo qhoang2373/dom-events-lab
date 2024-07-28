@@ -33,6 +33,11 @@ buttons.forEach(button => {
   });
 });
 
+// breakdown
+// buttons.forEach(button)... will be taking the buttons array and moving through it
+// if (value === 'C')clearDisplay... if the button's text is "C" then the display will clear
+// if (value === '=')... if the button's text is '=' then the calculate function will perform
+// if (value === '+', '-', '*', and '/'), then intiate the operator
 
 
 
