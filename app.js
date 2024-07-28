@@ -17,6 +17,25 @@ let operator = '';
 
 // /*----------------------------- Event Listeners -----------------------------*/
 
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const value = button.textContent;
+
+    if (value === 'C') {
+      clearDisplay();
+    } else if (value === '=') {
+      calculate();
+    } else if (value === '+' || value === '-' || value === '*' || value === '/') {
+      handleOperator(value);
+    } else {
+      handleNumber(value);
+    }
+  });
+});
+
+
+
+
 
 /*-------------------------------- Functions --------------------------------*/
 
