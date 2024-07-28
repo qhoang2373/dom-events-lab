@@ -89,3 +89,11 @@ function calculate() {
   secondOperand = '';
   operator = '';
 }
+
+function clearDisplay() {
+  firstOperand = '';
+  secondOperand = '';
+  operator = '';
+  display.textContent = '';
+}
+
