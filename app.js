@@ -78,6 +78,12 @@ function calculate() {
     default:
       return;
   }
+
+// breakdown
+// case is checks if the first value is '+' if it is then continue down the function
+// parseFloat is used to convert the firstOperand and secondOperand variables to numbers 
+// break is used to end the function 
+
   display.textContent = result;
   firstOperand = result;
   secondOperand = '';
