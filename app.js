@@ -54,4 +54,8 @@ function handleNumber(number) {
 // !operator is used for if no operator is set, the number is added
 // if there is a number set then add it to the second if else statement
 
+function handleOperator(op) {
+  operator = op;
+  display.textContent = firstOperand + operator;
+}
 
