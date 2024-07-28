@@ -50,5 +50,8 @@ function handleNumber(number) {
   display.textContent = firstOperand || '' + operator + secondOperand || '';
 }
 
+// breakdown 
+// !operator is used for if no operator is set, the number is added
+// if there is a number set then add it to the second if else statement
 
 
