@@ -59,3 +59,27 @@ function handleOperator(op) {
   display.textContent = firstOperand + operator;
 }
 
+
+function calculate() {
+  let result;
+  switch (operator) {
+    case '+':
+      result = parseFloat(firstOperand) + parseFloat(secondOperand);
+      break;
+    case '-':
+      result = parseFloat(firstOperand) - parseFloat(secondOperand);
+      break;
+    case '*':
+      result = parseFloat(firstOperand) * parseFloat(secondOperand);
+      break;
+    case '/':
+      result = parseFloat(firstOperand) / parseFloat(secondOperand);
+      break;
+    default:
+      return;
+  }
+  display.textContent = result;
+  firstOperand = result;
+  secondOperand = '';
+  operator = '';
+}
